@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MechGarage</title>
+    <!-- that for link the html page with css page for design -->
+    <link rel="stylesheet" href="landing.css">
+    <!-- here i will add an favicon -->
+    <link rel="icon" href="/images/siteicon.png" type="image/png">
+
+</head>
+<body>
+    <!-- here i will create the nav-bar with an icon -->
+    <header>
+        <span class="logo">MechGarage</span> 
+        <nav>
+          <ul class="nav_links">
+            <li><a href="#" style="text-decoration: underline; text-decoration-color: gray;  text-decoration-thickness:4px">Home</a></li>
+            <li><a href="/take a date/take a date.html">Take a date</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">log-in</a></li>
+          </ul>
+        </nav>
+        <a  class="cta" href="/create acc/create.html"><button>Register knew</button></a>
+      </header>
+      <!-- finally i finish the nav-bar  -->
+
+      <!-- here i will start on the body of the web site -->
+      <main>
+      <!-- here i will device them into 2 section left and right for organize the work  -->
+       <!-- the left side -->
+       <div class="left">
+        <!-- and here i will devece them into muliplle section for oraganize the work -->
+
+         <!-- here is the first section -->
+            <section class="section1">
+                <div class="motivation">
+                    <p id="typing-text">
+                        <!-- Does your car need help? <br>Find the best parts  <br>and mechanics near you -->
+                        <!-- that para you will find it insid the scripte of js -->
+                    </p>
+                </div>
+            </section>
+            <!-- end of first section -->
+             <!-- start of second section -->
+            <section class="section2">
+                <div class="para1">
+                    <p class="par">
+                        We're here to help you find the best parts for your car and connect <br> with the mechanics closest to you. Whether you need new parts or <br> quick technical assistance, we are
+                    </p>
+                </div>
+            </section>
+            <!-- end of second section -->
+            <!-- start of 3th section -->
+            <section class="section3">
+                <div class="button">
+                <a href="/seconde page/second.html"> <button class="explore">Explore our website</button></a>
+                </div>
+            </section>
+            <!-- end of the 3th section -->
+       </div>
+       <!-- the left side -->
+        <div class="right">
+            <section class="section4">
+                <div class="imgmc">
+                    <img src="/images/logo.jpeg" alt="my logo of web site ">
+                </div>
+            </section>
+        </div>
+      </main>
+      
+</body>
+<!-- that is the scrpit for animation of the sentence in our web site  -->
+<script>
+    const text = "Does your car need help? Find the best parts and mechanics near you.";
+const typingElement = document.getElementById("typing-text");
+let index = 0;
+
+function typeText() {
+    if (index < text.length) {
+        typingElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeText, 160); 
+    } else {
+        setTimeout(resetText, 2000); 
+    }
+}
+
+function resetText() {
+    typingElement.textContent = "";
+    index = 0;
+    typeText();
+}
+
+
+typeText();
+</script>
+</html>

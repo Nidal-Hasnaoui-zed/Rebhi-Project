@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin : 0 ; 
+    padding: 0;
+    background-color: #ffffff;
+  }
+  /* here i will design the decoration of my nev-bar */
+  li , a , button {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500 ;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 30px 10% ; 
+  }
+  .logo {
+    cursor: pointer;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    transform: translateX(-90px);
+    font-size: 32px;
+  }
+  .nav_links {
+    list-style: none;
+  
+  }
+  .nav_links li {
+    display: inline-block;
+    padding: 0px 20px ; 
+    transform: translateX(140px);
+  
+  }
+  .nav_links li a{
+    transition: all 0.3s ease 0s;
+  }
+  .nav_links li a:hover{
+    color: gray; 
+    transition-duration: 270ms;
+    text-decoration: underline;
+    font-size: 20px;
+  }
+  button {
+    padding : 9px 25px ; 
+    background-color: whitesmoke;
+    color:black ;
+    border: none ; 
+    border-radius: 50px;
+    cursor: pointer ; 
+    transition: all 0.3s ease 0s;
+    transform: translateX(70px);
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 400ms;
+    box-shadow: 5px 6px 3px gray;
+    
+  }
+  
+  /* finish of nav bar */
+
+  .all {
+    width: 500px;
+    height: 430px;
+    transform: translateX(400px);
+    padding-top: 50px;
+    
+  }
+  .all:hover {
+    transition-duration: 500ms;
+    cursor: pointer;
+    box-shadow: 0px 8px 20px rgba(60, 60, 150, 0.5);
+    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); */
+    border-radius: 10px;
+}
+  .header {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+  }
+  .header h1 {
+    margin-bottom: 17px;
+    font-size: 33px;
+  }
+  .header h4{
+    font-size: 15px;
+    color: gray ;
+  }
+
+  .email  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .email label {
+    transform: translateX(-124px);
+    margin-bottom: -15px;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 20px;
+  }
+  .email input {
+    width: 300px;
+    height: 30px;
+    border: 2px solid black ;
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  .email input::placeholder {
+    color: gray; 
+    text-align: center; 
+  }
+  .email input:focus {
+    text-align: center; 
+  }
+  .email input:hover {
+    width: 320px;
+    border-radius: 8px;
+    transition-duration: 500ms;
+  }
+  .submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .submit input{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    color:black ; 
+    border-radius: 3px;
+    margin-top: 60px;
+  }
+  .submit input:hover{
+    background-color: black;
+    color: whitesmoke;
+    transition-duration: 500ms;
+    box-shadow: 5px 6px 3px gray;
+    border-radius: 10px;
+  
+  }

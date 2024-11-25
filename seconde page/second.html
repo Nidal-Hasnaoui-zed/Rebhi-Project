@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MechGarage</title>
+    <!-- that for link the html page with css page for design -->
+    <link rel="stylesheet" href="seconde.css">
+    <!-- here i will add an favicon -->
+    <link rel="icon" href="/images/siteicon.png" type="image/png">
+</head>
+<body>
+     <!-- here i will create the nav-bar with an icon -->
+     <header>
+        <span class="logo">MechGarage</span> 
+        <nav>
+          <ul class="nav_links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Take a date</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">log-in</a></li>
+          </ul>
+        </nav>
+        <a  class="cta" href="#"><button>Register knew</button></a>
+      </header>
+      <!-- finally i finish the nav-bar  -->
+
+
+        <!-- here i will start on the body of the web site -->
+        <main>
+            <!-- here i will add h1 for greating the user -->
+            <div class="header">
+                <h1 id="h2"> <!--here nothing i knew ,but i wanna do an effect so just look in last of page you will find a scripte take the id od that h2 and you will understand all things--> </h1>
+            </div> 
+            <!-- here i will start of coding my body content -->
+            <!-- all sections  -->
+            <div class="all">
+                <!-- left side -->
+                <div class="left">
+                    <h2>Auto parts</h2> 
+                    <div class="para">
+                        <p>  
+                        Explore our wide selection of original and high-quality 
+                        used car parts,  designed to keep your vehicle running 
+                        smoothly. Whether you're looking for engines, lights, 
+                        or any other essential components, we have everything  
+                        you need to keep your car in top shape. Our range of  
+                        parts caters to different makes and models, ensuring 
+                        you find just the right fit. Keep your car performing 
+                        at its best with parts you can trust—all in one convenient  
+                        place
+                        </p>
+                    </div> 
+                    <button>Auto parts</button>
+                </div>
+
+                <!-- here i will add an div for separe the left-side and right side you will understand in page of css -->
+                <div class="separ">
+                    <!-- is empty i knew , just complete you will understand inshallah :) -->
+                </div>
+                <!-- right side : -->
+                <div class="right">
+                    <h2>Cars available</h2>
+                    <div class="para2">
+                        <p>
+                            Choose your new or used car from a wide selection
+                            of popular models and brands. We offer flexible
+                            financing options tailored to your needs,
+                            along with after-sales services that ensure
+                            your complete satisfaction. Whether you're 
+                            looking for an economical car or a luxury
+                            vehicle, we have the perfect options to help
+                            you find a car that matches your style and needs
+                            with ease and confidence.
+                        </p>
+                    </div>
+                    <a href="/Car Store/CarStore.html"><button>Browse cars</button></a>
+                </div>
+
+            </div>
+        </main>
+</body>
+<!-- first tnx for you to read my code and i knew it simple but i will be good in futer inshallah :) -->
+ <!-- ok here in that place you i will explain to you why i let the h2 empty   . -->
+<script>  // that is an tag for statr write the codes of java script .
+    const text = "Welcome to our online store for cars and spare parts"; // that is an constant variable so we can't change it nammed text
+    const typingElement = document.getElementById("h2"); // here we select the h2 (the empty one) did you remember ?? i give it an id,  so here i selectet with here id and i put it inside an constant varibale  
+    let index = 0; // here is an consant vaiable again with value   0
+    // haaaaaaaaa knew foucus please bc that is complexe alitle
+    // i will write an function named typeText ok ?
+    function typeText() {
+        if (index < text.length) { // here i put an condition 
+            typingElement.textContent += text.charAt(index); // if condition is true that will hapen
+            index++;
+            setTimeout(typeText, 190); // that is acceleration of the chars  shows
+        } else { // here if the consdiition is false : 
+            setTimeout(resetText, 2500); 
+        }
+    }
+
+    function resetText() {
+        typingElement.textContent = "";
+        index = 0;
+        typeText();
+    }
+
+
+    typeText();
+</script>
+</html>
